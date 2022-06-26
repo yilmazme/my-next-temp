@@ -3,12 +3,13 @@
 
 .container{
     height: 5rem;
-    background-color: aquamarine;
+    background-color: black;
     position: sticky;
     top: 0;
    
   
     .links{
+        color: white;
         width:90%;
         @include centerElement;
         @include flex(row, space-between, center);

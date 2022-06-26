@@ -1,0 +1,16 @@
+@import 'styles/mixins';
+@import 'styles/variables';
+
+.container{
+    h2{
+        text-align: center;
+        margin: 1rem;
+    }
+
+    .postsContainer{
+        @include flex(row, space-evenly, center);
+        flex-wrap: wrap;
+    
+    
+    }
+}

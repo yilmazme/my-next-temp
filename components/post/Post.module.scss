@@ -1,0 +1,22 @@
+@import 'styles/mixins';
+@import 'styles/variables';
+
+
+.each{
+    width: 20rem;
+    height: 30rem;
+    background-color: #fbfbfb;
+    padding: 2rem 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 1px 1px 1px black;
+    }
+
+    h3{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    p{
+        margin-top: 2rem;
+    }
+}
