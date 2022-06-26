@@ -1,0 +1,22 @@
+@import 'styles/mixins';
+@import 'styles/variables';
+
+.container {
+  padding: 0 2rem;
+  background-color: pink;
+  .main {
+    background-color: bisque;
+    min-height:calc(100vh - 5rem);
+    flex: 1;
+    padding: 0;
+    @include flex(column, flex-start, center);
+  }
+}
+
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}

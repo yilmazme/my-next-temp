@@ -1,0 +1,53 @@
+@import 'styles/mixins';
+@import 'styles/variables';
+
+.container{
+    height: 5rem;
+    background-color: aquamarine;
+    position: sticky;
+    top: 0;
+   
+  
+    .links{
+        width:90%;
+        @include centerElement;
+        @include flex(row, space-between, center);
+
+         a{
+            font-weight: 600;
+            &:hover{
+                color: cadetblue;
+            }
+            &:active{
+                color: red;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .container{
+        min-height: 5rem;
+        background-color: aquamarine;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+      
+        .links{
+            width:90%;
+            @include centerElement;
+            @include flex(column, space-between, flex-start);
+    
+             a{
+                font-weight: 600;
+                &:hover{
+                    color: cadetblue;
+                }
+                &:active{
+                    color: red;
+                }
+            }
+        }
+    }
+  }
+  
